@@ -1,0 +1,56 @@
+@use './../../../../../scss/variables.scss' as variables;
+
+.movie {
+    display: variables.$flex;
+    align-items: variables.$center;
+    justify-content: variables.$center;
+}
+
+.movie__container {
+    text-align: variables.$center;
+    font-size: variables.$font-normal;
+}
+
+.movie__img {
+    margin-bottom: variables.$margin;
+    width: variables.$single-movie-width;
+    height: variables.$single-movie-height;
+}
+
+.movie__length {
+    margin-bottom: variables.$small-margin;
+}
+
+.movie__rate {
+    margin-bottom: variables.$small-margin;
+}
+
+.movie__title {
+    font-size: variables.$font-large;
+    margin-bottom: variables.$small-margin;
+}
+
+.movie__font {
+    font-size: variables.$font-normal;
+}
+
+.movie__card {
+    display: variables.$center;
+    max-width: 30%;
+    margin-left: variables.$margin;
+}
+
+.movie__description {
+    font-size: variables.$font-normal
+}
+
+@media (max-width: 992px) { 
+    .movie {
+        flex-direction: variables.$column;
+    }
+
+    .movie__card {
+        max-width: 100%;
+        margin: variables.$margin;
+    }
+ }

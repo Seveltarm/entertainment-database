@@ -1,0 +1,17 @@
+@use './../../../../../scss/variables.scss' as variables; 
+
+.movie {
+    text-align: variables.$center;
+}
+
+.movie__img {
+    margin-bottom: variables.$margin;
+    cursor: pointer;
+    width: variables.$all-movies-width;
+    height: variables.$all-movies-height;
+}
+
+.movie__title {
+    font-size: variables.$font-large;
+    margin-bottom: variables.$small-margin;
+}

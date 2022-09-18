@@ -1,0 +1,6 @@
+@use './../../../scss/variables.scss' as variables; 
+
+.btn {
+    margin: variables.$margin-large variables.$margin-xlarge;
+    font-size: variables.$font-large;
+}

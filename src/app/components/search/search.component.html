@@ -1,0 +1,11 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Search</mat-label>
+      <input type="text" matInput [formControl]="filter">
+      <mat-autocomplete>
+        <mat-option *ngFor="let movie of filteredOptions | async" [value]="movie.name">
+          {{movie.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>

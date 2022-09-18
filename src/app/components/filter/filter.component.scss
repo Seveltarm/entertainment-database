@@ -1,0 +1,13 @@
+@use './../../../scss/variables.scss';
+
+.filter {
+    display: variables.$flex;
+    justify-content: variables.$center;
+    align-items: variables.$baseline;
+    margin-top: variables.$margin-large;
+}
+
+.filter__name {
+    font-size: variables.$font-large;
+    margin-right: variables.$margin;
+}

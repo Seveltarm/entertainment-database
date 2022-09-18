@@ -1,0 +1,29 @@
+<movie-navigate [navigateURL]="'movies'"></movie-navigate>
+
+<div *ngIf="singleMovie" class="movie">
+    <div class="movie__container">
+        <img class="movie__img" src="./../../../../../assets/movie-covers/{{ singleMovie[0].img }}">
+        <div class="movie__title">
+            {{ singleMovie[0].name }}
+        </div>
+        <div class="movie__length">
+            {{ singleMovie[0].length }}
+        </div>
+        <div class="movie__rate">
+            <b>IMDB rating:</b> {{ singleMovie[0].rate }}
+        </div>
+        <div class="movie__genre">
+            <b>Genre:</b>
+            <ng-container *ngFor="let genre of singleMovie[0].genres;">
+                {{ genre | titlecase }}
+            </ng-container>
+        </div>
+    </div>
+    <mat-card class="movie__card">
+        <mat-card-content>
+            <div class="movie__description">
+                {{ singleMovie[0].description }}
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

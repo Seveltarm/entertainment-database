@@ -1,0 +1,7 @@
+<movie-filter></movie-filter>
+<mat-grid-list [cols]="colspan">
+    <mat-grid-tile
+        *ngFor="let movie of movies$">
+        <movie-single-movie [title]="movie"></movie-single-movie>
+    </mat-grid-tile>
+</mat-grid-list>

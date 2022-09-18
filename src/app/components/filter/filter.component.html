@@ -1,0 +1,12 @@
+<section class="filter">
+    <div class="filter__name">Filter movies:</div>
+    <mat-form-field appearance="fill">
+        <mat-label>Genre</mat-label>
+        <mat-select (selectionChange)="filterGenre()" [(ngModel)]="selectedGenre">
+            <mat-option>No filter</mat-option>
+            <mat-option *ngFor="let genre of genreType | keyvalue" [value]="genre.value">
+                {{ genre.value }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</section>

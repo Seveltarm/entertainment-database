@@ -1,0 +1,5 @@
+<div *ngIf="title" class="movie">
+    <img [routerLink]="['preview', title.id]" class="movie__img" src="./../../../../../assets/movie-covers/{{ title.img }}">
+    <div class="movie__title">{{ title.name }}</div>
+    <div>{{ title.length }}</div>
+</div>
